@@ -1,4 +1,4 @@
-\# Latent Diffusion Model for High-Resolution 3D Cloud Radar Reflectivity Reconstruction
+# Latent Diffusion Model for High-Resolution 3D Cloud Radar Reflectivity Reconstruction
 
 
 
@@ -6,83 +6,83 @@ This repository contains the code for the manuscript:
 
 
 
-\*\*"A Latent Diffusion Model (LDM) for Reconstructing High-Resolution 3D Cloud Radar Reflectivity over the Pacific Ocean using Himawari-8/9 AHI Measurements"\*\*
+**"A Latent Diffusion Model (LDM) for Reconstructing High-Resolution 3D Cloud Radar Reflectivity over the Pacific Ocean using Himawari-8/9 AHI Measurements"**
 
 
 
-\---
+---
 
 
 
-\## 1. Main Components
+## 1. Main Components
 
 
 
-\### Model
+### Model
 
 
 
-\* `Model\_VAE.py`: Variational Autoencoder (VAE)
+* `Model_VAE.py`: Variational Autoencoder (VAE)
 
-\* `Model\_DDIM\_UNet.py`: DDIM-based U-Net model
-
-
-
-\### Training
+* `Model_DDIM_UNet.py`: DDIM-based U-Net model
 
 
 
-\* `Train\_VAE.py`: training VAE
-
-\* `Train\_CRR\_LDM\_IR.py`: The model trained using all channels
-
-\* `Train\_CRR\_LDM\_Full.py`: The model trained using the long-wave infrared channel
+### Training
 
 
 
-\### Inference / Reconstruction
+* `Train_VAE.py`: training VAE
+
+* `Train_CRR_LDM_IR.py`: The model trained using all channels
+
+* `Train_CRR_LDM_Full.py`: The model trained using the long-wave infrared channel
 
 
 
-\* `CRR\_LDM\_Reconstruct\_3DRF.py`: reconstruct 3D radar reflectivity
-
-\* `CRR\_LDM\_Gen\_samples.py`: generate samples using tested model
+### Inference / Reconstruction
 
 
 
-\### Data Processing
+* `CRR_LDM_Reconstruct_3DRF.py`: reconstruct 3D radar reflectivity
+
+* `CRR_LDM_Gen_samples.py`: generate samples using tested model
 
 
 
-\* `Data\_preprocessing\_Himawari\_Cloudsat.py`: preprocessing Himawari-8/9 and CloudSat data
+### Data Processing
 
 
 
-\### Utilities
-
-\* `FUNC\_read\_data.py`
-
-\* `FUNC\_plot\_image.py`
-
-\* `FUNC\_plot\_3Dscene.py`
-
-\* `FUNC\_analyse\_data.py`
+* `Data_preprocessing_Himawari_Cloudsat.py`: preprocessing Himawari-8/9 and CloudSat data
 
 
 
-\### Visualization
+### Utilities
+
+* `FUNC_read_data.py`
+
+* `FUNC_plot_image.py`
+
+* `FUNC_plot_3Dscene.py`
+
+* `FUNC_analyse_data.py`
 
 
 
-\* `Plot\_\*.py`: scripts for figures and evaluation metrics (SSIM, CRPS, FSS, etc.)
+### Visualization
 
 
 
-\---
+* `Plot_*.py`: scripts for figures and evaluation metrics (SSIM, CRPS, FSS, etc.)
 
 
 
-\## 2. Requirements
+---
+
+
+
+## 2. Requirements
 
 
 
@@ -98,11 +98,11 @@ pip install -r requirements.txt
 
 
 
-\---
+---
 
 
 
-\## 3. Data
+## 3. Data
 
 
 
@@ -110,9 +110,9 @@ The datasets used in this study are publicly available:
 
 
 
-\* Himawari-8/9 AHI: \[https://www.eorc.jaxa.jp/ptree/]
+* Himawari-8/9 AHI: [https://www.eorc.jaxa.jp/ptree/]
 
-\* CloudSat: \[https://www.cloudsat.cira.colostate.edu/data-products/2b-geoprof]
+* CloudSat: [https://www.cloudsat.cira.colostate.edu/data-products/2b-geoprof]
 
 
 
@@ -120,57 +120,57 @@ Due to data size, the full datasets are not included in this repository.
 
 
 
-\---
+---
 
 
 
-\## 4. How to Run
+## 4. How to Run
 
 
 
-\### Example: Reconstruction
-
-
-
-```bash
-
-python CRR\_LDM\_Reconstruct\_3DRF.py
-
-```
-
-
-
-\### Example: Generate Samples
+### Example: Reconstruction
 
 
 
 ```bash
 
-python CRR\_LDM\_Gen\_samples.py
+python CRR_LDM_Reconstruct_3DRF.py
 
 ```
 
 
 
-\---
+### Example: Generate Samples
 
 
 
-\## 5. Notes
+```bash
+
+python CRR_LDM_Gen_samples.py
+
+```
 
 
 
-\* Paths to datasets need to be configured manually in the scripts.
-
-\* Users should modify configuration parameters according to their environment.
+---
 
 
 
-\---
+## 5. Notes
 
 
 
-\## 6. Citation
+* Paths to datasets need to be configured manually in the scripts.
+
+* Users should modify configuration parameters according to their environment.
+
+
+
+---
+
+
+
+## 6. Citation
 
 
 
@@ -178,8 +178,8 @@ If you use this code, please cite:
 
 
 
-\[A Latent Diffusion Model (LDM) for Reconstructing High-Resolution 3D Cloud Radar Reflectivity over the Pacific Ocean using Himawari-8/9 AHI Measurements]
+[A Latent Diffusion Model (LDM) for Reconstructing High-Resolution 3D Cloud Radar Reflectivity over the Pacific Ocean using Himawari-8/9 AHI Measurements]
 
 
 
-\---
+---
